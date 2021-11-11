@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+   font-size: 100%;  
+   transition: ease-in-out;
+   transition: all 0.8s; 
+}
+
+body {
+    width: 320px;
+    margin: 0 auto;
+    background-color: rgb(209, 235, 235);
+}
+
+body input {
+    display: none;
+}
+
+.navigation {
+    width: 100%;
+    height: 1.8rem;
+   border: azure solid 2px;
+   overflow: hidden;
+}
+
+#home:checked~.navigation,
+#category:checked~.categories,
+#author:checked~.quiz-by-author,
+#picture:checked~.quiz-by-picture {
+    height: 160vw;
+}
+
+#menu:checked~.settings {
+    left: 0px;
+    opacity: 1;
+}
+
+.quiz-type-container {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    height: 0px;
+    width: 100%;
+}
+
+.nav-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: darkcyan;
+    
+}
+
+.navigation {
+    font-size: 2rem;
+    color: darkviolet;
+    font-style: italic;
+}
+
+.settings {
+    position: absolute;
+    top: 1.8rem;
+    height: 160vw;
+    left: 1000px;
+    opacity: 0;
+    background-color: cornflowerblue;
+    z-index: 1;
+    transition: all 0.2s;
+}
+
+.categories {
+    background-color: darkcyan;
+}
+
+.quiz-by-author {
+    background-color: rgb(80, 78, 170);
+}
+
+.quiz-by-picture {
+    background-color: rgb(218, 110, 71);
+}

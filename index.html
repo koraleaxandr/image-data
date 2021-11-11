@@ -6,29 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Quiz</title>
+    <link rel="stylesheet" href="./style/style.css" />
 
 </head>
 
-<body>
+<body class="body">
+    <input type="radio" id="home" name="home" checked>
+    <input type="checkbox" id="menu" name="home">
+    <input type="radio" name="home" id="picture">
+    <input type="radio" name="home" id="author">
+    <input type="radio" name="home" id="category">
     <section class="navigation">
-        <input type="checkbox" id="home" name="home">
+        <div class="nav-panel">
         <label for="home">Home</label>
-        <input type="checkbox" id="menu" name="menu">
         <label for="menu">Settings</label>
-
-        <input type="radio" name="current-quiz-type">
-        <label for="current-quiz-type"></label>
-        <input type="radio" name="current-quiz-type">
-        <label for="current-quiz-type"></label>
-        <input type="radio" name="current-quiz-type">
-        <label for="current-quiz-type"></label>
+        </div>
+        <div class="quiz-type-container">
+            <label for="author">
+                by Author
+            </label>
+            <label for="picture">
+                by picture
+            </label>
+            <label for="category">
+                choose category
+            </label>
+        </div>
 
     </section>
     <section class="settings"></section>
     <section class="categories"></section>
     <section class="quiz-by-author"></section>
-    <secion class="quiz-by-picture"></secion>
+    <section class="quiz-by-picture"></section>
 
+    <script src="./script.js"></script>
 </body>
 
 </html>
