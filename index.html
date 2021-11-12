@@ -18,8 +18,12 @@
     <input type="radio" name="home" id="category">
     <section class="navigation">
         <div class="nav-panel">
-        <label for="home">Home</label>
-        <label for="menu">Settings</label>
+        <label for="home" class="home-label">
+            <img src="./assets/svg/home-2741413.svg" width="28" height="28" alt="">            
+            Home</label>
+        <label for="menu">            
+            <img src="./assets/svg/settings.svg" width="22" height="22" alt="">            
+            Settings</label>
         </div>
         <div class="quiz-type-container">
             <label for="author">
@@ -34,10 +38,33 @@
         </div>
 
     </section>
-    <section class="settings"></section>
-    <section class="categories"></section>
-    <section class="quiz-by-author"></section>
-    <section class="quiz-by-picture"></section>
+    <section class="settings">
+        <div class="settings-container">
+            
+            
+        <label for="volume" class="volume-label">
+            <label for="mute" class="mute">
+                <input type="checkbox" id="mute">
+            </label>            
+            <h2>Volume</h2>            
+        <input type="range" value="4" min="0" max="10" step="1" class="progress"id="volume">
+        </label>
+        <label for="time" class="time-label">
+            <h2>Time</h2>            
+        <input type="range" value="4" min="0" max="10" step="1" class="progress1" id="time">
+        </label>
+        <input type="button" class="settings-submit">
+        </div>
+    </section>
+    <section class="categories">
+        <h2>choose category</h2>
+    </section>
+    <section class="quiz-by-author">
+        <h2>quiz by author</h2>
+    </section>
+    <section class="quiz-by-picture">
+        <h2>quiz by picture</h2>
+    </section>
 
     <script src="./script.js"></script>
 </body>
