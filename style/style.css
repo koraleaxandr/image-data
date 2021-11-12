@@ -5,7 +5,7 @@
     border: 0;
     box-sizing: border-box;
    font-size: 100%;  
-   transition: ease-in-out;
+ 
    transition: all 0.8s; 
 }
 
@@ -16,16 +16,17 @@ html {
 
 body {
     min-width: 320px;
-    max-width: 1024px;
-    
+    max-width: 1024px;    
     margin: 0 auto;
-    background-color: rgb(209, 235, 235);
+    background-color: rgb(165, 179, 179);
+    overflow: hidden;
 }
 
 h2 {
-    font: 2.0em sans-serif;
-    color: aliceblue;
+    font: 2.0rem sans-serif;
+    color: rgb(221, 201, 149);
     text-transform: uppercase;
+    text-align: center;
 }
 
 body input {
@@ -34,8 +35,8 @@ body input {
 
 .navigation {
     width: 100%;
-    height: 1.8rem;
-   border: azure solid 2px;
+    height: 2rem;
+   /* border: azure solid 2px; */
    overflow: hidden;
 }
 
@@ -58,10 +59,6 @@ body input {
     opacity: 0;
 }
 
-.quiz-type-container {
-    display: flex;
-    flex-direction: column;
-}
 
 section {
     height: 0px;
@@ -69,37 +66,53 @@ section {
     max-height: 900px;
     overflow: hidden;
 }
-
+/*********************************************************************************/
 .nav-panel {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-size: 1.5rem;
-    color: darkcyan;
+    font-size: 1.8rem;
+    color: rgb(160, 148, 79);
     
 }
 
 .nav-panel label {
-    width: 30%;
-    min-width: 110px;
+    width: 120px;    
    background-color: transparent;
    display: flex;  
    cursor: pointer;
    font-weight: 800;
    font-style: normal;
 }
-
+ .nav-panel label:hover {
+     /* transform: rotate(0.5turn); */
+     transform: scale(2);
+ }
 
 .navigation {      
     font-size: 2rem;
-    color: darkviolet;
     font-style: italic;
+   transition: 1.2s;
+   transition: opacity 0.5s;
 }
 
 .quiz-type-container {
     height: 100%;
     display: grid;
     grid-template-rows: 1fr 1fr 0.5fr;
+}
+
+.quiz-type-container label {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: rgba(189, 196, 196, 0.521) solid 2px;
+    ;
+}
+
+.quiz-type-container img {
+    width: 80%;
+    max-width:410px ;
+    margin: 5px auto 0 auto;
 }
    
 /***************************************************************/
@@ -128,7 +141,7 @@ section {
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;    
-    background-color: darkcyan;
+    background-color: rgb(106, 139, 139);
 }
 
 .volume-label,
@@ -181,22 +194,49 @@ section {
 
 .settings-submit {
     display: block;
-    width: 100px;
-    height: 30px;
+    width: 150px;
+    height: 50px;
     margin: 10px auto;
     border-radius: 10px;
-    background-color: coral;
+    background-color: coral; 
+    font: 1.2rem sans-serif;  
+    text-align: center;
+    text-shadow: 4px 4px 5px rgb(73, 39, 39);
+    color: snow;
 }
 
 /******************************************************************/
 .categories {
-    background-color: cornflowerblue;
+    background-color: rgb(105, 124, 156);
 }
 
 .quiz-by-author {
-    background-color: rgb(80, 78, 170);
+    background-color: rgb(99, 98, 116);
 }
 
 .quiz-by-picture {
-    background-color: rgb(218, 110, 71);
+    background-color: rgb(160, 110, 90);
 }
+
+
+/****************************************FOOTER**********/
+footer {
+    height: 5vw;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* footer img {
+    transform: scale(0.1);
+} */
+ footer a {
+     max-width: 350px;
+     display: flex;
+     flex-wrap: wrap;
+     font: 1em sans-serif;
+     color: rgb(70, 67, 67);
+     text-align: center;
+     text-decoration: none;
+ }

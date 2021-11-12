@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./style/style.css" />
 
 </head>
-
 <body class="body">
     <input type="radio" id="home" name="home" checked>
     <input type="checkbox" id="menu" name="home">
@@ -22,27 +21,25 @@
             <img src="./assets/svg/home-2741413.svg" width="28" height="28" alt="">            
             Home</label>
         <label for="menu">            
-            <img src="./assets/svg/settings.svg" width="22" height="22" alt="">            
+            <img src="./assets/svg/settings.svg" width="28" height="28" alt="">            
             Settings</label>
         </div>
         <div class="quiz-type-container">
             <label for="author">
-                by Author
+                <img src="./assets/img/Author.jpg" alt="">
+              <h2>ARTISTS QUIZ</h2>
             </label>
             <label for="picture">
-                by picture
+                <img src="./assets/img/b60adaba0ace2666085a.jpg" alt="">
+              <h2>PICTURES QUIZ</h2>
             </label>
             <label for="category">
-                choose category
+               <h2>select category</h2>
             </label>
         </div>
-
     </section>
     <section class="settings">
-        <div class="settings-container">
-            
-            
-        <label for="volume" class="volume-label">
+        <div class="settings-container"> <label for="volume" class="volume-label">
             <label for="mute" class="mute">
                 <input type="checkbox" id="mute">
             </label>            
@@ -53,20 +50,29 @@
             <h2>Time</h2>            
         <input type="range" value="4" min="0" max="10" step="1" class="progress1" id="time">
         </label>
-        <input type="button" class="settings-submit">
+        <label for="setsabmit" class="settings-submit">
+<input type="button" id="setsabmit">
+SAVE SETTINGS
+        </label>
+        
         </div>
     </section>
     <section class="categories">
-        <h2>choose category</h2>
+        <h2>select category</h2>
     </section>
     <section class="quiz-by-author">
-        <h2>quiz by author</h2>
+        <h2>ARTISTS QUIZ</h2>
     </section>
     <section class="quiz-by-picture">
-        <h2>quiz by picture</h2>
+        <h2>PICTURES QUIZ</h2>
     </section>
 
     <script src="./script.js"></script>
 </body>
-
+<footer>
+    <a href="https://rs.school/js/" target="blank">
+    <img src="./assets/svg/logo_rs_text.svg" width="20px" height="20" alt=""></a>
+    <a href="https://github.com/koraleaxandr" target="blank">    
+   Alexandr Karatkevich</a>
+</footer>
 </html>
